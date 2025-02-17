@@ -1,4 +1,10 @@
+// Imagine que você está desenvolvendo um sistema de login. Cheque se o usuário está cadastrado (variável estaCadastrado) e se o código de acesso do usuário é válido (variável codigo) e valide se ele pode entrar:
+
+// Se ele estiver cadastrado e o código for "1234", exiba "Acesso permitido! ✅"
+// Se ele não estiver cadastrado ou se o código for qualquer outro valor, exiba "Acesso não permitido. Tente novamente. ❌"
+
 const prompt = require("prompt-sync")();
+
 let w = true;
 let estaCadastrado;
 

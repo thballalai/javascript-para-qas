@@ -1,9 +1,13 @@
-let numero = -3;
+// Exemplo Prático 4
+// Verificando se um usuário pode acessar um site
 
-if(numero>0){
-    console.log("O número é positivo.");
-} else if(numero < 0) {
-    console.log("O número é negativo");
-} else {
-    console.log("O número é 0");
-}
+// Declaramos uma variável temConta
+let temConta = false;
+
+// Avaliamos se a variável tem conta tem valor true
+// se sim, imprime "Bem vindo de volta!"
+// se não, imprime "Crie uma conta para acessar."
+let mensagem = temConta ? "Bem vindo de volta!" : "Crie uma conta para acessar.";
+console.log(mensagem);
+
+// Saída: Crie uma conta para acessar.

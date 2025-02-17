@@ -1,3 +1,9 @@
+// Um jogo retorna dois valores: pontosJogador e pontosAdversario. Crie uma lógica que:
+
+// Se pontosJogador for maior, exiba "Você venceu! 🏅"
+// Se pontosAdversario for maior, exiba "Você perdeu. 😢"
+// Se forem iguais, exiba "Empate! ⚖️"
+
 const prompt = require("prompt-sync")();
 
 let pontosJogador = prompt("Informe quantos pontos você fez: ");

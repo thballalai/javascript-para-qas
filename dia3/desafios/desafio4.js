@@ -1,3 +1,10 @@
+// Crie um sistema de pedidos onde o usuário pode escolher entre três opções de lanche digitando um número:
+
+// 1 → "Você escolheu um Hambúrguer"
+// 2 → "Você escolheu uma Pizza"
+// 3 → "Você escolheu um Sanduíche"
+// Se for um número diferente desses, exiba "Opção inválida"
+
 const prompt = require("prompt-sync")();
 
 let lancheEscolihdo = parseInt(prompt("Escolha um lanche: (1,2 ou 3) "));

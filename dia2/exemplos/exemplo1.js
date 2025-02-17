@@ -1,8 +1,18 @@
-let temperatura = 25;
-if(temperatura > 30) {
-    console.log("Está muito quente! *");
-} else if(temperatura >= 20) {
-    console.log("O clima está agradável.");
+// Exemplo Prático 1
+// Verificando se um número é positivo ou negativo
+
+// Declaramos uma variável número
+let numero = -3;
+
+// Avaliamos se o valor da variável numero é maior que zero, se for imprime "O número é positivo."
+// Caso não seja maior que zero, mas que seja menor que zero, imprime "O número é negativo."
+// Caso não seja maior que zero, nem menor que zero, imprime "O número é zero."
+if(numero>0){
+    console.log("O número é positivo.");
+} else if(numero < 0) {
+    console.log("O número é negativo.");
 } else {
-    console.log("Está frio!");
+    console.log("O número é zero.");
 }
+
+// Saída: O número é negativo.
