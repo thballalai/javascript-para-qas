@@ -4,20 +4,23 @@
 // "Bateria moderada 🔋" se estiver entre 30 e 80
 // "Bateria fraca! Conecte o carregador! ⚠️" se for menor que 30
 
+// Inicialização da constante que captura input do usuário
 const prompt = require("prompt-sync")();
 
-let w = true;
-let nivelBateria;
+// Inicialização da variável nivelBateria
+let nivelBateria = 0;
 
-while(w==true){
-    nivelBateria = parseInt(prompt("Qual o nível de batéria? (entre 1 e 100) "));
-    if (nivelBateria>=1 && nivelBateria<=100){
-        break;
+// Estrutura de repetição que garante a primeira execução do código
+do{
+    // Variável nivelBateria recebe input do usuário
+    nivelBateria = parseInt(prompt("Qual o nível da bateria? (entre 1 e 100) "));
+    // Verificado se nivelBaterial recebeu input válido
+    if (nivelBateria <= 0 || nivelBateria > 100){
+        console.log("Valor inválido. Informe novamente.");
     }
-}
+}while(nivelBateria <= 0 || nivelBateria > 100);
 
-
-
+// Verificação do valor de nivelBateria para determinar a mensagem que será exibida na tela
 if (nivelBateria>80){
     console.log("Bateria cheia!");
 } else if(nivelBateria>30){
@@ -25,3 +28,9 @@ if (nivelBateria>80){
 } else {
     console.log("Bateria fraca! Conecte ao carregador!");
 }
+
+// Saída:
+// Qual o nível da bateria? 105
+// Valor Inválido. Informe novamente.
+// Qual o nível da bateria? 55
+// Bateria moderada.
